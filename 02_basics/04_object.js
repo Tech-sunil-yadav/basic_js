@@ -52,3 +52,30 @@ console.log(tinderUser)
 // console.log(Object.entries(tinderUser)); // converted every keys and values in array as divided into array behaf of key
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // check the existing whether element available or not
+
+// DESTRUCTING CONCEPT
+const course = {
+    courseName : "Javascript",
+    Price: "999",
+    courseInstructor: "SunilYadav"
+}
+//course.courseInstructor
+const {courseInstructor: instructor} = course   // HERE courseInstruct rename as instructor
+console.log(instructor);
+
+// API -- JAB BHI APNA KAM KISI KEY UPER THOP OR DEY  DETEY HAI USEY API KAHTEY HAI
+// EXAMPLE-- LIKE SIGN AS GOOGLE , FACEBOOK API WORK HERE LIKE CHECINGHAM  EMAIL AUTHENTICATION ETC
+// API MEY BACKEND SEY KUCH VALUE AATI HAI US VALUE KO KAISEY LIKTEY HAI -- pahley wo value XML structure mey aati thi tat was complex
+//now comes in JSON -- IT LOOKS LIKE { } IT IS ALSO A OBJECT
+// {
+//     "name":"Abhinay",
+//     "courseName":"javascript",
+//     "price":"999"
+
+// }
+
+// some time api aaray ki fform mey milti hai
+[
+    {},
+    {}
+]
