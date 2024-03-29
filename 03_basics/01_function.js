@@ -18,4 +18,56 @@ const result = addtwonumber(3,5)
 function LoginUser (username){
     return `${username} Just Logged In`
 }
-console.log(LoginUser("Sunil"))
+// console.log(LoginUser("Sunil"))
+// console.log(LoginUser(" ")) // IF PASS EMPTY STRING THEN GIVE JUST LOGGED IN
+// console.log(LoginUser()) // if not pass anything then it wil give undefined value
+
+
+// function LoginUser (username="yadav"){
+//     if(!username)
+//     {
+//         console.log("Please enter a username ")
+//         return
+//     }
+//     return `${username} Just Logged In`
+// }
+// console.log(LoginUser("sunil"))
+
+
+
+// if multiple argument needed then will use rest operator 
+// like cart example multple items added
+// function CalculatePrice(...num1){
+//  return num1
+// }
+// console.log(CalculatePrice(200,400,500))
+
+// example-02
+// function CalculatePrice(val1, val2,...num2){    // ... rest operator // syntax of rest operator and spread opeartor is same but it will depend according to uses 
+
+//      return num2
+
+//  }
+//  console.log(CalculatePrice(200,400,500,600))
+
+
+
+// handle object with function
+// const user = {
+//     username:"sunil",
+//     price: 199
+// }
+// function handleObject(anyobject){
+//     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+// }
+// handleObject(user)
+
+
+// handle array with function
+
+const myNewArray = [200,300,500]
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([700,400,900,567]));
